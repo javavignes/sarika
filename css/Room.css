@@ -1,0 +1,48 @@
+body {
+    background: linear-gradient(45deg, lightgreen, sandybrown);
+}
+.text-center{
+    color: blue; /* You can change 'blue' to the color of your choice */
+}
+/* Card styles */
+.card {
+    transition: transform 0.3s ease-in-out;
+    background-color:#d1ba9f; /* Default background color */
+}
+
+/* Card hover effect */
+.card:hover {
+    transform: scale(1.05);
+    background-color:#d1ba9f; /* Background color on hover */
+}
+
+/* Customize the background colors for each card */
+.card:nth-child(odd) {
+    background-color: #d1ba9f; /* Odd-indexed card background color */
+}
+
+.card:nth-child(even) {
+    background-color: #d1ba9f; /* Even-indexed card background color */
+}
+.now{
+    color: blue; /* You can change 'blue' to the color of your choice */
+}
+.btn-primary:hover {
+    background-color: #007bff; /* Change button background color on hover */
+    color: #fff; /* Change text color on hover */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition effect */
+}
+.scroll-link {
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.scroll-link:hover {
+    background-color: #f8f9fa; /* Change background color on hover */
+}
+
+
+
+
+
+

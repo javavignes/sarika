@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Add Bootstrap CSS via CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header" style="color: blue;">
+                        <h3 class="text-center">Admin Login</h3>
+                    </div>
+                    <div class="card-body">
+                        <form id="loginForm">
+                            <div class="mb-3">
+                                <label for="username" class="form-label">Username</label>
+                                <input type="text" id="username" class="form-control" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="password" class="form-label">Password</label>
+                                <input type="password" id="password" class="form-control" required>
+                            </div>
+                            <div class="text-center">
+                                <button type="submit" class="btn btn-primary">Login</button>
+                            </div>
+                            <!-- Error message container -->
+                            <div id="errorMessage" class="text-center text-danger mt-3"></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="errorMessage" class="text-center text-danger mt-3 error-message"></div>
+
+    <!-- Add Bootstrap JS and Popper.js via CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+         // Add a click event listener to the login button
+    document.getElementById("loginForm").addEventListener("submit", function(event) {
+        // Prevent the form from actually submitting
+        event.preventDefault();
+
+        // Get the values entered by the user
+        var username = document.getElementById("username").value;
+        var password = document.getElementById("password").value;
+
+        // Check if the username and password are correct
+        if (username === "admin" && password === "admin") {
+            // Redirect to the "Rooms.html" page
+            window.location.href = "Rooms.html";
+        } else {
+            // Display an error message with animation
+            var errorMessage = document.getElementById("errorMessage");
+            errorMessage.textContent = "Incorrect username or password. Please try again.";
+
+            // Add the animation class to show the error message
+            errorMessage.classList.add("error-message-show");
+
+            // Remove the animation class after a delay
+            setTimeout(function() {
+                errorMessage.classList.remove("error-message-show");
+            }, 3000); // Remove animation after 3 seconds (adjust as needed)
+        }
+    });
+    </script>
+    
+</body>
+</html>

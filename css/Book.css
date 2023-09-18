@@ -1,0 +1,30 @@
+body {
+    background: linear-gradient(45deg, lightgreen, sandybrown);
+}
+  /* Add any custom CSS styles here */
+  button.btn-primary:hover {
+    background-color: #007bff;
+}
+
+button.btn-primary {
+    transition: background-color 0.3s ease;
+}
+/* Add any custom CSS styles here */
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="date"]:focus,
+textarea:focus {
+    animation: input-focus 0.3s ease;
+}
+
+@keyframes input-focus {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}

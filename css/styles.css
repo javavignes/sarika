@@ -1,0 +1,58 @@
+/* styles.css */
+
+/* Style the form container */
+.container {
+    text-align: "";
+}
+
+/* Style the card */
+.card {
+    margin-top: 20px;
+}
+
+/* Style the form labels */
+.form-label {
+    font-weight: bold;
+}
+
+/* Style the error message */
+#errorMessage {
+    color: red;
+    font-weight: bold;
+}
+/* styles.css */
+.admin-header {
+    color: blue; /* You can change 'blue' to the color of your choice */
+}
+body {
+    background: linear-gradient(45deg, lightgreen, sandybrown);
+}
+label.form-label {
+    color: sandybrown;
+}
+
+/* Set a fixed height for card-body */
+.card-body {
+    height: 200px; /* Adjust the height as needed */
+}
+
+/* Ensure consistent card title and content lengths */
+.card-title {
+    font-size: 18px; /* Adjust the font size as needed */
+}
+
+.card-text {
+    font-size: 14px; /* Adjust the font size as needed */
+}
+.text-center {
+    text-align: center;
+}
+.card-body {
+    height: 250px; /* Adjust the height as needed */
+}
+/* Add CSS animation properties for error message */
+.error-message {
+    opacity: 0; /* Start with zero opacity */
+    transform: translateY(-20px); /* Move up by 20px */
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
